@@ -1,0 +1,146 @@
+BoundedContexts:
+  - ProjectName: FacultyManagement
+    Port: 5003
+    DbContext:
+      ContextName: FacultyManagementDbContext
+      DatabaseName: FacultyManagement
+      Provider: sqlserver
+    Entities:
+      - Name: Faculty
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: FirstName
+            Type: string
+          - Name: LastName
+            Type: string
+          - Name: Email
+            Type: string
+          - Name: Phone
+            Type: string
+          - Name: DateOfBirth
+            Type: DateTime
+          - Name: DateOfJoining
+            Type: DateTime
+          - Name: Address
+            Type: string
+          - Name: Qualifications
+            Relationship: 1tomany
+            ForeignEntityName: Qualification
+            ForeignEntityPlural: Qualifications
+          - Name: Schedules
+            Relationship: 1tomany
+            ForeignEntityName: Schedule
+            ForeignEntityPlural: Schedules
+          - Name: Evaluations
+            Relationship: 1tomany
+            ForeignEntityName: Evaluation
+            ForeignEntityPlural: Evaluations
+
+      - Name: Qualification
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: FacultyID
+            Type: guid
+          - Name: Degree
+            Type: string
+          - Name: Institution
+            Type: string
+          - Name: YearOfCompletion
+            Type: int
+
+      - Name: Course
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: CourseCode
+            Type: string
+          - Name: CourseName
+            Type: string
+          - Name: Credits
+            Type: int
+          - Name: CourseAssignments
+            Relationship: 1tomany
+            ForeignEntityName: CourseAssignment
+            ForeignEntityPlural: CourseAssignments
+
+      - Name: CourseAssignment
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: FacultyID
+            Type: guid
+          - Name: CourseID
+            Type: guid
+          - Name: AssignmentDate
+            Type: DateTime
+
+      - Name: Schedule
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: FacultyID
+            Type: guid
+          - Name: DayOfWeek
+            Type: string
+          - Name: StartTime
+            Type: DateTime
+          - Name: EndTime
+            Type: DateTime
+          - Name: IsOfficeHour
+            Type: bool
+
+      - Name: Evaluation
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: FacultyID
+            Type: guid
+          - Name: EvaluationDate
+            Type: DateTime
+          - Name: Evaluator
+            Type: string
+          - Name: Comments
+            Type: string
+          - Name: Rating
+            Type: int
+          - Name: EvaluatorID
+            Type: guid
+
+      - Name: Evaluator
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: EvaluatorName
+            Type: string
+          - Name: EvaluatorEmail
+            Type: string

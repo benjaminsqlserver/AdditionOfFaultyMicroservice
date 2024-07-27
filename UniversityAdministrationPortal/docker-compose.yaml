@@ -1,0 +1,60 @@
+version: '3.7'
+
+services:
+  facultymanagement-db:
+    image: mcr.microsoft.com/mssql/server
+    restart: always
+    ports:
+      - '55729:1433'
+    environment:
+      - DB_USER=SA
+      - SA_PASSWORD=#localDockerPassword#
+      - DB_CONTAINER_NAME=dev_facultymanagement
+      - ACCEPT_EULA=Y
+    volumes:
+      - facultymanagement-data:/var/lib/sqlserver/data
+  coursemanagement-db:
+    image: mcr.microsoft.com/mssql/server
+    restart: always
+    ports:
+      - '52744:1433'
+    environment:
+      - DB_USER=SA
+      - SA_PASSWORD=#localDockerPassword#
+      - DB_CONTAINER_NAME=dev_coursemanagement
+      - ACCEPT_EULA=Y
+    volumes:
+      - coursemanagement-data:/var/lib/sqlserver/data
+  studentmanagement-db:
+    image: mcr.microsoft.com/mssql/server
+    restart: always
+    ports:
+      - '52396:1433'
+    environment:
+      - DB_USER=SA
+      - SA_PASSWORD=#localDockerPassword#
+      - DB_CONTAINER_NAME=dev_studentmanagement
+      - ACCEPT_EULA=Y
+    volumes:
+      - studentmanagement-data:/var/lib/sqlserver/data
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+#    port mappings: https://www.jaegertracing.io/docs/1.32/getting-started/
+    ports:
+      - "52405:5775/udp"
+      - "52404:6831/udp"
+      - "52406:6832/udp"
+      - "52407:5778"
+      - "52408:16686"
+      - "52409:14250"
+      - "52410:14268"
+      - "52411:14269"
+      - "52412:9411"
+
+        
+volumes:
+  # compose volumes marker - do not delete
+  facultymanagement-data:
+  coursemanagement-data:
+  studentmanagement-data:

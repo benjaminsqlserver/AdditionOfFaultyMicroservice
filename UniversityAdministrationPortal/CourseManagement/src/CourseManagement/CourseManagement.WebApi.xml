@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CourseManagement</name>
+    </assembly>
+    <members>
+        <member name="M:CourseManagement.Controllers.v1.CoursesController.AddCourse(CourseManagement.Domain.Courses.Dtos.CourseForCreationDto)">
+            <summary>
+            Creates a new Course record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.CoursesController.GetCourse(System.Guid)">
+            <summary>
+            Gets a single Course by ID.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.CoursesController.GetCourses(CourseManagement.Domain.Courses.Dtos.CourseParametersDto)">
+            <summary>
+            Gets a list of all Courses.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.CoursesController.UpdateCourse(System.Guid,CourseManagement.Domain.Courses.Dtos.CourseForUpdateDto)">
+            <summary>
+            Updates an entire existing Course.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.CoursesController.DeleteCourse(System.Guid)">
+            <summary>
+            Deletes an existing Course record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.EnrollmentsController.AddEnrollment(CourseManagement.Domain.Enrollments.Dtos.EnrollmentForCreationDto)">
+            <summary>
+            Creates a new Enrollment record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.EnrollmentsController.GetEnrollment(System.Guid)">
+            <summary>
+            Gets a single Enrollment by ID.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.EnrollmentsController.GetEnrollments(CourseManagement.Domain.Enrollments.Dtos.EnrollmentParametersDto)">
+            <summary>
+            Gets a list of all Enrollments.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.EnrollmentsController.UpdateEnrollment(System.Guid,CourseManagement.Domain.Enrollments.Dtos.EnrollmentForUpdateDto)">
+            <summary>
+            Updates an entire existing Enrollment.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.EnrollmentsController.DeleteEnrollment(System.Guid)">
+            <summary>
+            Deletes an existing Enrollment record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.InstructorsController.AddInstructor(CourseManagement.Domain.Instructors.Dtos.InstructorForCreationDto)">
+            <summary>
+            Creates a new Instructor record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.InstructorsController.GetInstructor(System.Guid)">
+            <summary>
+            Gets a single Instructor by ID.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.InstructorsController.GetInstructors(CourseManagement.Domain.Instructors.Dtos.InstructorParametersDto)">
+            <summary>
+            Gets a list of all Instructors.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.InstructorsController.UpdateInstructor(System.Guid,CourseManagement.Domain.Instructors.Dtos.InstructorForUpdateDto)">
+            <summary>
+            Updates an entire existing Instructor.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.InstructorsController.DeleteInstructor(System.Guid)">
+            <summary>
+            Deletes an existing Instructor record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.LectureHallsController.AddLectureHall(CourseManagement.Domain.LectureHalls.Dtos.LectureHallForCreationDto)">
+            <summary>
+            Creates a new LectureHall record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.LectureHallsController.GetLectureHall(System.Guid)">
+            <summary>
+            Gets a single LectureHall by ID.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.LectureHallsController.GetLectureHalls(CourseManagement.Domain.LectureHalls.Dtos.LectureHallParametersDto)">
+            <summary>
+            Gets a list of all LectureHalls.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.LectureHallsController.UpdateLectureHall(System.Guid,CourseManagement.Domain.LectureHalls.Dtos.LectureHallForUpdateDto)">
+            <summary>
+            Updates an entire existing LectureHall.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.LectureHallsController.DeleteLectureHall(System.Guid)">
+            <summary>
+            Deletes an existing LectureHall record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.PrerequisitesController.AddPrerequisite(CourseManagement.Domain.Prerequisites.Dtos.PrerequisiteForCreationDto)">
+            <summary>
+            Creates a new Prerequisite record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.PrerequisitesController.GetPrerequisite(System.Guid)">
+            <summary>
+            Gets a single Prerequisite by ID.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.PrerequisitesController.GetPrerequisites(CourseManagement.Domain.Prerequisites.Dtos.PrerequisiteParametersDto)">
+            <summary>
+            Gets a list of all Prerequisites.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.PrerequisitesController.UpdatePrerequisite(System.Guid,CourseManagement.Domain.Prerequisites.Dtos.PrerequisiteForUpdateDto)">
+            <summary>
+            Updates an entire existing Prerequisite.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.PrerequisitesController.DeletePrerequisite(System.Guid)">
+            <summary>
+            Deletes an existing Prerequisite record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.ResourcesController.AddResource(CourseManagement.Domain.Resources.Dtos.ResourceForCreationDto)">
+            <summary>
+            Creates a new Resource record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.ResourcesController.GetResource(System.Guid)">
+            <summary>
+            Gets a single Resource by ID.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.ResourcesController.GetResources(CourseManagement.Domain.Resources.Dtos.ResourceParametersDto)">
+            <summary>
+            Gets a list of all Resources.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.ResourcesController.UpdateResource(System.Guid,CourseManagement.Domain.Resources.Dtos.ResourceForUpdateDto)">
+            <summary>
+            Updates an entire existing Resource.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.ResourcesController.DeleteResource(System.Guid)">
+            <summary>
+            Deletes an existing Resource record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.SchedulesController.AddSchedule(CourseManagement.Domain.Schedules.Dtos.ScheduleForCreationDto)">
+            <summary>
+            Creates a new Schedule record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.SchedulesController.GetSchedule(System.Guid)">
+            <summary>
+            Gets a single Schedule by ID.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.SchedulesController.GetSchedules(CourseManagement.Domain.Schedules.Dtos.ScheduleParametersDto)">
+            <summary>
+            Gets a list of all Schedules.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.SchedulesController.UpdateSchedule(System.Guid,CourseManagement.Domain.Schedules.Dtos.ScheduleForUpdateDto)">
+            <summary>
+            Updates an entire existing Schedule.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.SchedulesController.DeleteSchedule(System.Guid)">
+            <summary>
+            Deletes an existing Schedule record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.StudentsController.AddStudent(CourseManagement.Domain.Students.Dtos.StudentForCreationDto)">
+            <summary>
+            Creates a new Student record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.StudentsController.GetStudent(System.Guid)">
+            <summary>
+            Gets a single Student by ID.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.StudentsController.GetStudents(CourseManagement.Domain.Students.Dtos.StudentParametersDto)">
+            <summary>
+            Gets a list of all Students.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.StudentsController.UpdateStudent(System.Guid,CourseManagement.Domain.Students.Dtos.StudentForUpdateDto)">
+            <summary>
+            Updates an entire existing Student.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Controllers.v1.StudentsController.DeleteStudent(System.Guid)">
+            <summary>
+            Deletes an existing Student record.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Databases.EntityConfigurations.CourseConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{CourseManagement.Domain.Courses.Course})">
+            <summary>
+            The database configuration for Courses. 
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Databases.EntityConfigurations.EnrollmentConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{CourseManagement.Domain.Enrollments.Enrollment})">
+            <summary>
+            The database configuration for Enrollments. 
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Databases.EntityConfigurations.InstructorConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{CourseManagement.Domain.Instructors.Instructor})">
+            <summary>
+            The database configuration for Instructors. 
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Databases.EntityConfigurations.LectureHallConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{CourseManagement.Domain.LectureHalls.LectureHall})">
+            <summary>
+            The database configuration for LectureHalls. 
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Databases.EntityConfigurations.PrerequisiteConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{CourseManagement.Domain.Prerequisites.Prerequisite})">
+            <summary>
+            The database configuration for Prerequisites. 
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Databases.EntityConfigurations.ResourceConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{CourseManagement.Domain.Resources.Resource})">
+            <summary>
+            The database configuration for Resources. 
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Databases.EntityConfigurations.ScheduleConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{CourseManagement.Domain.Schedules.Schedule})">
+            <summary>
+            The database configuration for Schedules. 
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Databases.EntityConfigurations.StudentConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{CourseManagement.Domain.Students.Student})">
+            <summary>
+            The database configuration for Students. 
+            </summary>
+        </member>
+        <member name="P:CourseManagement.Domain.Addresses.Address.Line1">
+            <summary>
+            Address line 1 (e.g., street, PO Box, or company name).
+            </summary>
+        </member>
+        <member name="P:CourseManagement.Domain.Addresses.Address.Line2">
+            <summary>
+            Address line 2 (e.g., apartment, suite, unit, or building).
+            </summary>
+        </member>
+        <member name="P:CourseManagement.Domain.Addresses.Address.City">
+            <summary>
+            City, district, suburb, town, or village.
+            </summary>
+        </member>
+        <member name="P:CourseManagement.Domain.Addresses.Address.State">
+            <summary>
+            State, county, province, or region.
+            </summary>
+        </member>
+        <member name="P:CourseManagement.Domain.Addresses.Address.PostalCode">
+            <summary>
+            ZIP or postal code.
+            </summary>
+        </member>
+        <member name="P:CourseManagement.Domain.Addresses.Address.Country">
+            <summary>
+            Two-letter country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">(ISO 3166-1 alpha-2)</a>.
+            </summary>
+        </member>
+        <member name="M:CourseManagement.Extensions.Services.WebAppServiceConfiguration.AddBoundaryServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])">
+            <summary>
+            Registers all services in the assembly of the given interface.
+            </summary>
+        </member>
+        <member name="T:CourseManagement.Migrations.GenerateDb">
+            <inheritdoc />
+        </member>
+        <member name="M:CourseManagement.Migrations.GenerateDb.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CourseManagement.Migrations.GenerateDb.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CourseManagement.Migrations.GenerateDb.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

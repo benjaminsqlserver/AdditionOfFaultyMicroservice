@@ -1,0 +1,161 @@
+BoundedContexts:
+  - ProjectName: CourseManagement
+    Port: 5002
+    DbContext:
+      ContextName: CourseManagementDbContext
+      DatabaseName: CourseManagement
+      Provider: sqlserver
+    Entities:
+      - Name: Course
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: CourseName
+            Type: string
+          - Name: Syllabus
+            Type: string
+          - Name: Credits
+            Type: int
+          - Name: Schedules
+            Relationship: 1tomany
+            ForeignEntityName: Schedule
+            ForeignEntityPlural: Schedules
+          - Name: Resources
+            Relationship: 1tomany
+            ForeignEntityName: Resource
+            ForeignEntityPlural: Resources
+          - Name: Prerequisites
+            Relationship: 1tomany
+            ForeignEntityName: Prerequisite
+            ForeignEntityPlural: Prerequisites
+          - Name: Enrollments
+            Relationship: 1tomany
+            ForeignEntityName: Enrollment
+            ForeignEntityPlural: Enrollments
+
+      - Name: Schedule
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: ClassTiming
+            Type: DateTime
+          - Name: Location
+            Type: string
+          - Name: CourseID
+            Type: guid
+          - Name: InstructorID
+            Type: guid
+
+      - Name: Instructor
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: FirstName
+            Type: string
+          - Name: LastName
+            Type: string
+          - Name: Email
+            Type: string
+          - Name: Schedules
+            Relationship: 1tomany
+            ForeignEntityName: Schedule
+            ForeignEntityPlural: Schedules
+
+      - Name: Student
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: FirstName
+            Type: string
+          - Name: LastName
+            Type: string
+          - Name: Email
+            Type: string
+          - Name: PhoneNumber
+            Type: string
+          - Name: MatriculationNumber
+            Type: string
+          - Name: GenderId
+            Type: guid
+          - Name: Enrollments
+            Relationship: 1tomany
+            ForeignEntityName: Enrollment
+            ForeignEntityPlural: Enrollments
+
+      - Name: Enrollment
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: EnrollmentDate
+            Type: DateTime
+          - Name: StudentID
+            Type: guid
+          - Name: CourseID
+            Type: guid
+
+      - Name: LectureHall
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: RoomNumber
+            Type: string
+          - Name: Capacity
+            Type: int
+          - Name: Schedules
+            Relationship: 1tomany
+            ForeignEntityName: Schedule
+            ForeignEntityPlural: Schedules
+
+      - Name: Resource
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: ResourceName
+            Type: string
+          - Name: ResourceType
+            Type: string
+          - Name: Quantity
+            Type: int
+          - Name: CourseID
+            Type: guid
+
+      - Name: Prerequisite
+        Features:
+          - Type: AddRecord
+          - Type: GetRecord
+          - Type: GetList
+          - Type: UpdateRecord
+          - Type: DeleteRecord
+        Properties:
+          - Name: CourseID
+            Type: guid
+          - Name: PrerequisiteCourseID
+            Type: guid

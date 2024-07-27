@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FacultyManagement</name>
+    </assembly>
+    <members>
+        <member name="M:FacultyManagement.Controllers.v1.CourseAssignmentsController.AddCourseAssignment(FacultyManagement.Domain.CourseAssignments.Dtos.CourseAssignmentForCreationDto)">
+            <summary>
+            Creates a new CourseAssignment record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CourseAssignmentsController.GetCourseAssignment(System.Guid)">
+            <summary>
+            Gets a single CourseAssignment by ID.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CourseAssignmentsController.GetCourseAssignments(FacultyManagement.Domain.CourseAssignments.Dtos.CourseAssignmentParametersDto)">
+            <summary>
+            Gets a list of all CourseAssignments.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CourseAssignmentsController.UpdateCourseAssignment(System.Guid,FacultyManagement.Domain.CourseAssignments.Dtos.CourseAssignmentForUpdateDto)">
+            <summary>
+            Updates an entire existing CourseAssignment.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CourseAssignmentsController.DeleteCourseAssignment(System.Guid)">
+            <summary>
+            Deletes an existing CourseAssignment record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CoursesController.AddCourse(FacultyManagement.Domain.Courses.Dtos.CourseForCreationDto)">
+            <summary>
+            Creates a new Course record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CoursesController.GetCourse(System.Guid)">
+            <summary>
+            Gets a single Course by ID.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CoursesController.GetCourses(FacultyManagement.Domain.Courses.Dtos.CourseParametersDto)">
+            <summary>
+            Gets a list of all Courses.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CoursesController.UpdateCourse(System.Guid,FacultyManagement.Domain.Courses.Dtos.CourseForUpdateDto)">
+            <summary>
+            Updates an entire existing Course.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.CoursesController.DeleteCourse(System.Guid)">
+            <summary>
+            Deletes an existing Course record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluationsController.AddEvaluation(FacultyManagement.Domain.Evaluations.Dtos.EvaluationForCreationDto)">
+            <summary>
+            Creates a new Evaluation record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluationsController.GetEvaluation(System.Guid)">
+            <summary>
+            Gets a single Evaluation by ID.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluationsController.GetEvaluations(FacultyManagement.Domain.Evaluations.Dtos.EvaluationParametersDto)">
+            <summary>
+            Gets a list of all Evaluations.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluationsController.UpdateEvaluation(System.Guid,FacultyManagement.Domain.Evaluations.Dtos.EvaluationForUpdateDto)">
+            <summary>
+            Updates an entire existing Evaluation.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluationsController.DeleteEvaluation(System.Guid)">
+            <summary>
+            Deletes an existing Evaluation record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluatorsController.AddEvaluator(FacultyManagement.Domain.Evaluators.Dtos.EvaluatorForCreationDto)">
+            <summary>
+            Creates a new Evaluator record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluatorsController.GetEvaluator(System.Guid)">
+            <summary>
+            Gets a single Evaluator by ID.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluatorsController.GetEvaluators(FacultyManagement.Domain.Evaluators.Dtos.EvaluatorParametersDto)">
+            <summary>
+            Gets a list of all Evaluators.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluatorsController.UpdateEvaluator(System.Guid,FacultyManagement.Domain.Evaluators.Dtos.EvaluatorForUpdateDto)">
+            <summary>
+            Updates an entire existing Evaluator.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.EvaluatorsController.DeleteEvaluator(System.Guid)">
+            <summary>
+            Deletes an existing Evaluator record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.FacultiesController.AddFaculty(FacultyManagement.Domain.Faculties.Dtos.FacultyForCreationDto)">
+            <summary>
+            Creates a new Faculty record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.FacultiesController.GetFaculty(System.Guid)">
+            <summary>
+            Gets a single Faculty by ID.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.FacultiesController.GetFaculties(FacultyManagement.Domain.Faculties.Dtos.FacultyParametersDto)">
+            <summary>
+            Gets a list of all Faculties.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.FacultiesController.UpdateFaculty(System.Guid,FacultyManagement.Domain.Faculties.Dtos.FacultyForUpdateDto)">
+            <summary>
+            Updates an entire existing Faculty.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.FacultiesController.DeleteFaculty(System.Guid)">
+            <summary>
+            Deletes an existing Faculty record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.QualificationsController.AddQualification(FacultyManagement.Domain.Qualifications.Dtos.QualificationForCreationDto)">
+            <summary>
+            Creates a new Qualification record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.QualificationsController.GetQualification(System.Guid)">
+            <summary>
+            Gets a single Qualification by ID.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.QualificationsController.GetQualifications(FacultyManagement.Domain.Qualifications.Dtos.QualificationParametersDto)">
+            <summary>
+            Gets a list of all Qualifications.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.QualificationsController.UpdateQualification(System.Guid,FacultyManagement.Domain.Qualifications.Dtos.QualificationForUpdateDto)">
+            <summary>
+            Updates an entire existing Qualification.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.QualificationsController.DeleteQualification(System.Guid)">
+            <summary>
+            Deletes an existing Qualification record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.SchedulesController.AddSchedule(FacultyManagement.Domain.Schedules.Dtos.ScheduleForCreationDto)">
+            <summary>
+            Creates a new Schedule record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.SchedulesController.GetSchedule(System.Guid)">
+            <summary>
+            Gets a single Schedule by ID.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.SchedulesController.GetSchedules(FacultyManagement.Domain.Schedules.Dtos.ScheduleParametersDto)">
+            <summary>
+            Gets a list of all Schedules.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.SchedulesController.UpdateSchedule(System.Guid,FacultyManagement.Domain.Schedules.Dtos.ScheduleForUpdateDto)">
+            <summary>
+            Updates an entire existing Schedule.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Controllers.v1.SchedulesController.DeleteSchedule(System.Guid)">
+            <summary>
+            Deletes an existing Schedule record.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Databases.EntityConfigurations.CourseAssignmentConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{FacultyManagement.Domain.CourseAssignments.CourseAssignment})">
+            <summary>
+            The database configuration for CourseAssignments. 
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Databases.EntityConfigurations.CourseConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{FacultyManagement.Domain.Courses.Course})">
+            <summary>
+            The database configuration for Courses. 
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Databases.EntityConfigurations.EvaluationConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{FacultyManagement.Domain.Evaluations.Evaluation})">
+            <summary>
+            The database configuration for Evaluations. 
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Databases.EntityConfigurations.EvaluatorConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{FacultyManagement.Domain.Evaluators.Evaluator})">
+            <summary>
+            The database configuration for Evaluators. 
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Databases.EntityConfigurations.FacultyConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{FacultyManagement.Domain.Faculties.Faculty})">
+            <summary>
+            The database configuration for Faculties. 
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Databases.EntityConfigurations.QualificationConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{FacultyManagement.Domain.Qualifications.Qualification})">
+            <summary>
+            The database configuration for Qualifications. 
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Databases.EntityConfigurations.ScheduleConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{FacultyManagement.Domain.Schedules.Schedule})">
+            <summary>
+            The database configuration for Schedules. 
+            </summary>
+        </member>
+        <member name="P:FacultyManagement.Domain.Addresses.Address.Line1">
+            <summary>
+            Address line 1 (e.g., street, PO Box, or company name).
+            </summary>
+        </member>
+        <member name="P:FacultyManagement.Domain.Addresses.Address.Line2">
+            <summary>
+            Address line 2 (e.g., apartment, suite, unit, or building).
+            </summary>
+        </member>
+        <member name="P:FacultyManagement.Domain.Addresses.Address.City">
+            <summary>
+            City, district, suburb, town, or village.
+            </summary>
+        </member>
+        <member name="P:FacultyManagement.Domain.Addresses.Address.State">
+            <summary>
+            State, county, province, or region.
+            </summary>
+        </member>
+        <member name="P:FacultyManagement.Domain.Addresses.Address.PostalCode">
+            <summary>
+            ZIP or postal code.
+            </summary>
+        </member>
+        <member name="P:FacultyManagement.Domain.Addresses.Address.Country">
+            <summary>
+            Two-letter country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">(ISO 3166-1 alpha-2)</a>.
+            </summary>
+        </member>
+        <member name="M:FacultyManagement.Extensions.Services.WebAppServiceConfiguration.AddBoundaryServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])">
+            <summary>
+            Registers all services in the assembly of the given interface.
+            </summary>
+        </member>
+        <member name="T:FacultyManagement.Migrations.GenerateDb">
+            <inheritdoc />
+        </member>
+        <member name="M:FacultyManagement.Migrations.GenerateDb.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FacultyManagement.Migrations.GenerateDb.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FacultyManagement.Migrations.GenerateDb.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
